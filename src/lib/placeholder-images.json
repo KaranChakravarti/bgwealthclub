@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "homeHero",
+      "description": "A diverse group of people collaborating on financial charts.",
+      "imageUrl": "https://images.unsplash.com/photo-1676119451563-0c4a1a37e019?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNlJTIwbWVldGluZ3xlbnwwfHx8fDE3NzAwOTA4MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance meeting"
+    },
+    {
+      "id": "aboutStory",
+      "description": "A winding path leading towards a sunrise, symbolizing a journey.",
+      "imageUrl": "https://images.unsplash.com/photo-1663439835946-9decda3bc8ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxqb3VybmV5JTIwcGF0aHxlbnwwfHx8fDE3NzAxMzc5MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "journey path"
+    },
+    {
+      "id": "teamFounder",
+      "description": "Portrait of a confident and friendly business professional.",
+      "imageUrl": "https://images.unsplash.com/photo-1581065178047-8ee15951ede6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzAxMDgyMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "teamMember2",
+      "description": "Portrait of a smiling team member.",
+      "imageUrl": "https://images.unsplash.com/photo-1581065178047-8ee15951ede6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzAxMDgyMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "testimonial1",
+      "description": "Portrait of a happy customer.",
+      "imageUrl": "https://images.unsplash.com/photo-1533147670608-2a2f9775d3a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYXBweSUyMHBlcnNvbnxlbnwwfHx8fDE3NzAwNTQ3NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy person"
+    },
+    {
+      "id": "testimonial2",
+      "description": "Portrait of a satisfied man.",
+      "imageUrl": "https://images.unsplash.com/photo-1526469719044-414856f08640?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzYXRpc2ZpZWQlMjBwZXJzb258ZW58MHx8fHwxNzcwMTM3OTA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "satisfied person"
+    },
+    {
+      "id": "testimonial3",
+      "description": "Portrait of a thoughtful person looking at their laptop.",
+      "imageUrl": "https://images.unsplash.com/photo-1543269664-7eef42226a21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBsYXB0b3B8ZW58MHx8fHwxNzcwMTEyNDYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person laptop"
+    },
+    {
+      "id": "contactUs",
+      "description": "A modern and clean office reception area.",
+      "imageUrl": "https://images.unsplash.com/photo-1582653547187-2bb73b2d7b67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvZmZpY2UlMjByZWNlcHRpb258ZW58MHx8fHwxNzcwMTE3MjY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office reception"
+    },
+    {
+      "id": "guidanceHeader",
+      "description": "Abstract image representing artificial intelligence and data processing.",
+      "imageUrl": "https://images.unsplash.com/photo-1676411237170-ddca6e4c158a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhYnN0cmFjdCUyMEFJfGVufDB8fHx8MTc3MDA0OTgxOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract AI"
+    }
+  ]
 }
