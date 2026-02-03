@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -25,7 +25,17 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <Logo />
+        {/* <Logo /> */}
+        <nav>
+          <Image
+            src="/logo.gif"     // Path starts from the root of the public folder
+            alt="BG Wealth Club Logo"
+            width={50}         // Set your desired width
+            height={50}        // Set your desired height
+            priority  
+            className="rounded-xl"          // Ensures the logo loads quickly as it's a key element
+          />
+        </nav>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">

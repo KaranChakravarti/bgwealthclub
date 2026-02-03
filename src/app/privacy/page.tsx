@@ -13,7 +13,7 @@ export default function PrivacyPage() {
                         <p>Last updated: {new Date().toLocaleDateString()}</p>
                         
                         <h2>Introduction</h2>
-                        <p>BG Wealth Hub ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website bgwealthhub.com.</p>
+                        <p>BG Wealth Club ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website bgwealthclub.com.</p>
                         
                         <h2>Information We Collect</h2>
                         <p>We may collect personal information such as your name, email address, and phone number when you voluntarily provide it to us by filling out a form on our site.</p>
@@ -36,7 +36,7 @@ export default function PrivacyPage() {
                         <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
 
                         <h2>Contact Us</h2>
-                        <p>If you have any questions about this Privacy Policy, please contact us at privacy@bgwealthhub.com.</p>
+                        <p>If you have any questions about this Privacy Policy, please contact us at privacy@bgwealthclub.com.</p>
                     </div>
                 </div>
             </section>

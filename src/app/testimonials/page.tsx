@@ -25,7 +25,7 @@ export default function TestimonialsPage() {
                 <div className="container mx-auto px-4 md:px-6 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">Member Stories</h1>
                     <p className="mt-4 text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto">
-                        Hear from the people who have transformed their financial lives with BG Wealth Hub.
+                        Hear from the people who have transformed their financial lives with BG Wealth Club.
                     </p>
                 </div>
             </section>

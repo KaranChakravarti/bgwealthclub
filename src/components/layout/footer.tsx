@@ -74,7 +74,7 @@ export function Footer() {
             <strong>Disclaimer:</strong> BG Wealth Club does not provide guaranteed financial returns. All financial decisions involve risk. We provide educational content to help you make informed decisions.
           </p>
           <p className="text-xs text-muted-foreground text-center mt-2">
-            &copy; {new Date().getFullYear()} BG Wealth Hub. All Rights Reserved.
+            &copy; {new Date().getFullYear()} BG Wealth Club. All Rights Reserved.
           </p>
         </div>
       </div>

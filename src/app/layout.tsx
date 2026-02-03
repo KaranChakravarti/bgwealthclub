@@ -6,7 +6,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 
 export const metadata: Metadata = {
-  title: 'BG Wealth Hub',
+  title: 'BG Wealth Club',
   description: 'Build Wealth Together with BG Wealth Club — a community focused on financial education, disciplined investing, and long-term wealth growth.',
 };
 

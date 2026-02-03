@@ -49,12 +49,12 @@ export default function JoinPage() {
                             </CardHeader>
                             <CardContent className="flex flex-col sm:flex-row gap-4">
                                 <Button asChild className="w-full bg-green-500 hover:bg-green-600">
-                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://wa.me/919100105707" target="_blank" rel="noopener noreferrer">
                                         <MessageSquare className="mr-2 h-5 w-5" /> Join on WhatsApp
                                     </a>
                                 </Button>
                                 <Button asChild className="w-full bg-blue-500 hover:bg-blue-600">
-                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://t.me/+919100105707" target="_blank" rel="noopener noreferrer">
                                         <Send className="mr-2 h-5 w-5" /> Join on Telegram
                                     </a>
                                 </Button>

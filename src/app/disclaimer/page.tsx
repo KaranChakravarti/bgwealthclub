@@ -11,7 +11,7 @@ export default function DisclaimerPage() {
                 <div className="container mx-auto px-4 md:px-6">
                     <div className="prose dark:prose-invert max-w-4xl mx-auto text-muted-foreground">
                         <h2>No Financial Advice</h2>
-                        <p>The information provided by BG Wealth Hub ("we," "us," or "our") on bgwealthhub.com (the "Site") is for general informational and educational purposes only. All information on the Site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.</p>
+                        <p>The information provided by BG Wealth Club ("we," "us," or "our") on bgwealthclub.com (the "Site") is for general informational and educational purposes only. All information on the Site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.</p>
                         
                         <h2>Investment Risk</h2>
                         <p>BG Wealth Club does not provide guaranteed financial returns. All financial decisions and investments involve risk. A loss of principal is possible. We are not a registered broker-dealer or investment advisor. You should not construe any such information or other material as legal, tax, investment, financial, or other advice.</p>

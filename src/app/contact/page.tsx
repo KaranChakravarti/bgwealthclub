@@ -50,7 +50,7 @@ export default function ContactPage() {
                                 </div>
                             </div>
                             <Button asChild className="w-full bg-green-500 hover:bg-green-600">
-                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                <a href="https://wa.me/919100105707" target="_blank" rel="noopener noreferrer">
                                     <MessageSquare className="mr-2 h-5 w-5" /> Chat on WhatsApp
                                 </a>
                             </Button>
