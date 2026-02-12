@@ -24,7 +24,7 @@ export function Footer() {
           <div className="space-y-4">
             <Logo />
             <p className="text-sm text-muted-foreground max-w-xs">
-              A community focused on financial education, disciplined investing, and long-term wealth growth.
+              BG Investment Group is committed to creating a new form of Internet sharing economy, making money as easy as breathing! Be truly free and happy for yourself!
             </p>
              <div className="flex gap-2">
                 {socialLinks.map((social) => (
@@ -50,13 +50,22 @@ export function Footer() {
           <div>
             <h4 className="font-semibold font-headline text-primary mb-4">Legal</h4>
             <ul className="space-y-2">
-              {legalLinks.map(link => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li className="flex items-center justify-between text-sm text-muted-foreground">
+                <span>US (SEC) License</span>
+                <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
+              </li>
+              <li className="flex items-center justify-between text-sm text-muted-foreground">
+                <span>Australian (ASIC) license</span>
+                <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
+              </li>
+              <li className="flex items-center justify-between text-sm text-muted-foreground">
+                <span>BG Wealth Sharing Ltd.</span>
+                <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
+              </li>
+              <li className="flex items-center justify-between text-sm text-muted-foreground">
+                <span>BG Wealth Sharing Co. Ltd.</span>
+                <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
+              </li>
             </ul>
           </div>
 
@@ -64,7 +73,7 @@ export function Footer() {
             <h4 className="font-semibold font-headline text-primary mb-4">Contact Us</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Email: <a href="mailto:support@bgwealthclub.com" className="hover:text-primary">support@bgwealthclub.com</a></li>
-              <li>Phone: <a href="tel:+1234567890" className="hover:text-primary">+1 (234) 567-890</a></li>
+              <li>Phone: <a href="tel:9100105707" className="hover:text-primary">9100105707</a></li>
             </ul>
           </div>
         </div>

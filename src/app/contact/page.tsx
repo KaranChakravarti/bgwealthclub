@@ -46,7 +46,7 @@ export default function ContactPage() {
                                 </div>
                                 <div className="flex items-center gap-4">
                                     <Phone className="w-6 h-6 text-accent" />
-                                    <a href="tel:+1234567890" className="hover:text-primary">+1 (234) 567-890</a>
+                                    <a href="tel:9100105707" className="hover:text-primary">9100105707</a>
                                 </div>
                             </div>
                             <Button asChild className="w-full bg-green-500 hover:bg-green-600">
@@ -57,8 +57,7 @@ export default function ContactPage() {
                             <div className="space-y-2">
                                 <h3 className="text-xl font-semibold font-headline text-primary">Our Office</h3>
                                 <p className="text-muted-foreground">
-                                    123 Wealth Avenue, Suite 100<br/>
-                                    Prosperity City, 54321
+                                    Physical offices in Australia and Singapore
                                 </p>
                                 <div className="aspect-video bg-muted rounded-lg mt-4 flex items-center justify-center text-muted-foreground">
                                     Google Map Placeholder

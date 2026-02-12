@@ -1,12 +1,10 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { CheckCircle2, Users } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { BookOpen, LifeBuoy, TrendingUp, Users } from 'lucide-react';
 
 const introductions = [
   {
@@ -23,62 +21,40 @@ const introductions = [
   },
 ];
 
-const faqs = [
-  {
-    question: "When was the DSJ Exchange platform founded?",
-    answer: "DSJ Exchange was founded in April 2022 by former Argos engineer Karen Sandler. The company is registered in Australia and Singapore as DSJ Exchange Ltd and has physical offices in Australia and Singapore."
-  },
-  {
-    question: "Which countries can access the DSJ exchange?",
-    answer: "DSJ Exchange serves users globally. Please check local regulations for specific access details."
-  },
-  {
-    question: "Is the DSJ exchange platform legal and safe?",
-    answer: "Yes, DSJ Exchange holds licenses and operating permits from more than 30 countries and regions, including the US (SEC), Australia (ASIC), Singapore (MAS), Dubai (DFSA), and the Bahamas."
-  }
-];
+export const metadata = {
+  title: 'Company Overview - BG Wealth Custom',
+  description: 'Overview of BG Wealth Sharing Investment Group and its mission.',
+};
 
-export default function Home() {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
+export default function CompanyOverview() {
+    const heroImage = PlaceHolderImages.find(p => p.id === 'homeHero'); // Reusing hero image or finding another if available
 
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative w-full py-20 md:py-32 lg:py-40 bg-primary/10">
-        <div className="container mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-bold tracking-tight text-primary">
-              BG Wealth Sharing Investment Group
-            </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
-              innovative investment strategies
-            </h2>
-            <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto md:mx-0">
-              The company also "pioneered the separation of alpha and beta" investing and developed a strategy known as "alpha overlay," involving "20 uncorrelated" portfolios leveraging risk or return combined with cash or market benchmarks.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Link href="/bg-hall-of-fame">BG Hall of Fame</Link>
-              </Button>
+      {/* Hero / Header Section */}
+      <section className="py-16 md:py-24 bg-primary/10">
+        <div className="container mx-auto px-4 md:px-6 text-center space-y-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-bold text-primary">BG Wealth Sharing Investment Group</h1>
+            <p className="text-2xl text-foreground font-semibold">Helping millions of people escape poverty</p>
+            <div className="flex justify-center">
+                 <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                    <Link href="/bg-community">BG Community</Link>
+                </Button>
             </div>
-          </div>
-          <div className="relative h-64 md:h-auto md:aspect-square rounded-xl overflow-hidden shadow-2xl">
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-                data-ai-hint={heroImage.imageHint}
-                priority
-              />
-            )}
-          </div>
+           
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8">
+                 {['Blockchain technology', 'Digital currency trading', 'Contract trading', 'Sharing economy'].map((item) => (
+                    <div key={item} className="bg-background p-4 rounded-lg shadow-sm flex items-center justify-center text-center font-medium">
+                        {item}
+                    </div>
+                 ))}
+            </div>
         </div>
       </section>
 
-      {/* Introduction Section */}
+      {/* Repeated Sections from Home Page */}
+      
+      {/* Introduction Section (The world's largest hedge fund) */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
@@ -99,39 +75,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
-      {/* Founder Section */}
-      <section className="py-16 md:py-24 bg-primary/5">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">
-                BG Wealth Sharing Investment Group Founded by Stephen Beard in 2018
-              </h2>
-              <p className="text-lg text-foreground/80">
-                BG Wealth Sharing Investment Group was founded by Stephen Beard in 2018 on behalf of the International Monetary Fund to participate in the creation of Investing's subsidiary. As a subsidiary of Investing, BG has formed a full industry chain structure in the field of financial investment, covering blockchain technology, digital currency trading, digital currency contract trading, sharing economy research, industrial investment, financial services, venture capital, financial asset investment, etc., and rationally arranges financial and quasi-financial platforms such as futures, securities, trusts, insurance, reinsurance, banks, micro-loans, financial leasing, industrial funds, private equity funds, etc., leading professional teams to achieve win-win projects, helping millions of people get rid of poverty and become rich, and helping immature win-win teams to fully transform, optimize and upgrade, and create a good market environment. BG has mature management experience and models in blockchain technology, digital currency trading, digital currency contract trading, sharing economy, etc., which can establish a good reputation for the platform and create a good profit and investment environment for the sharing economy team.
-              </p>
-              <div className="grid grid-cols-2 gap-4 pt-4">
-                  <div className="bg-background p-4 rounded-lg shadow-sm text-center">
-                      <div className="text-3xl font-bold text-primary">0+</div>
-                      <div className="text-sm text-muted-foreground">Helping millions of people escape poverty</div>
-                  </div>
-                   <div className="bg-background p-4 rounded-lg shadow-sm text-center">
-                      <div className="text-3xl font-bold text-primary">0%</div>
-                      <div className="text-sm text-muted-foreground">Good income and investment environment</div>
-                  </div>
-              </div>
-            </div>
-            <div className="relative aspect-video md:aspect-square bg-muted rounded-xl flex items-center justify-center">
-                {/* Placeholder for Founder Image if available, otherwise generic */}
-                <Users className="w-24 h-24 text-muted-foreground/20" />
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Platform Introduction */}
-      <section className="py-16 md:py-24 bg-background">
+      {/* Platform Introduction (DSJ Introduction) */}
+      <section className="py-16 md:py-24 bg-primary/5">
         <div className="container mx-auto px-4 md:px-6">
              <div className="max-w-4xl mx-auto space-y-6">
                 <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary text-center">PLATFORM INTRODUCTION: DSJ Exchange Introduction</h2>
@@ -150,8 +96,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Professor Introduction */}
-      <section className="py-16 md:py-24 bg-primary/5">
+      {/* Professor Introduction (Stephen Beard) */}
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="order-2 md:order-1 relative aspect-square bg-muted rounded-xl overflow-hidden shadow-lg">
@@ -173,27 +119,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center space-y-4 mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">FAQS: Common Platform Questions</h2>
-          </div>
-          <div className="max-w-3xl mx-auto">
-            <Accordion type="single" collapsible className="w-full">
-              {faqs.map((faq, index) => (
-                <AccordionItem value={`item-${index}`} key={index}>
-                  <AccordionTrigger className="text-lg text-left font-semibold">{faq.question}</AccordionTrigger>
-                  <AccordionContent className="text-base text-muted-foreground">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
         </div>
       </section>
     </div>
