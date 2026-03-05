@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Logo } from './logo';
-import { Facebook, Twitter, Linkedin, Instagram, Youtube, Bot } from 'lucide-react';
+import { Facebook, Twitter, Instagram, User2Icon, Youtube, Bot } from 'lucide-react';
 
 const legalLinks = [
   { href: '/disclaimer', label: 'Disclaimer' },
@@ -11,9 +11,9 @@ const legalLinks = [
 
 const socialLinks = [
     { icon: <Twitter className="h-5 w-5" />, href: '#', name: 'Twitter' },
-    { icon: <Facebook className="h-5 w-5" />, href: '#', name: 'Facebook' },
-    { icon: <Linkedin className="h-5 w-5" />, href: '#', name: 'LinkedIn' },
-    { icon: <Instagram className="h-5 w-5" />, href: '#', name: 'Instagram' },
+    { icon: <User2Icon className="h-5 w-5" />, href: '/admin', name: 'Admin' },
+    { icon: <Youtube className="h-5 w-5" />, href: 'https://www.youtube.com/@bgwealthclub', name: 'YouTube' },
+    { icon: <Instagram className="h-5 w-5" />, href: 'https://www.instagram.com/bgwealthclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', name: 'Instagram' },
 ];
 
 export function Footer() {
@@ -24,7 +24,7 @@ export function Footer() {
           <div className="space-y-4">
             <Logo />
             <p className="text-sm text-muted-foreground max-w-xs">
-              A community focused on financial education, disciplined investing, and long-term wealth growth.
+              BG Investment Group is committed to creating a new form of Internet sharing economy, making money as easy as breathing! Be truly free and happy for yourself!
             </p>
              <div className="flex gap-2">
                 {socialLinks.map((social) => (
@@ -50,21 +50,30 @@ export function Footer() {
           <div>
             <h4 className="font-semibold font-headline text-primary mb-4">Legal</h4>
             <ul className="space-y-2">
-              {legalLinks.map(link => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li className="flex items-center justify-between text-sm text-muted-foreground">
+                <span>US (SEC) License</span>
+                <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
+              </li>
+              <li className="flex items-center justify-between text-sm text-muted-foreground">
+                <span>Australian (ASIC) license</span>
+                <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
+              </li>
+              <li className="flex items-center justify-between text-sm text-muted-foreground">
+                <span>BG Wealth Sharing Ltd.</span>
+                <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
+              </li>
+              <li className="flex items-center justify-between text-sm text-muted-foreground">
+                <span>BG Wealth Sharing Co. Ltd.</span>
+                <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
+              </li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold font-headline text-primary mb-4">Contact Us</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Email: <a href="mailto:support@bgwealthclub.com" className="hover:text-primary">support@bgwealthclub.com</a></li>
-              <li>Phone: <a href="tel:+1234567890" className="hover:text-primary">+1 (234) 567-890</a></li>
+              <li>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCJDtnVGJqkQRQCPHDRsHjjrCGgPZJCfScQPGFjwDFvXcfDBSRPtjWLwFcSCMLZWXlRDqB" className="hover:text-primary">bgwealthclub@gmail.com</a></li>
+              <li>Phone: <a href="tel:9100105707" className="hover:text-primary">9100105707</a></li>
             </ul>
           </div>
         </div>

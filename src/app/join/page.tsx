@@ -53,9 +53,9 @@ export default function JoinPage() {
                                         <MessageSquare className="mr-2 h-5 w-5" /> Join on WhatsApp
                                     </a>
                                 </Button>
-                                <Button asChild className="w-full bg-blue-500 hover:bg-blue-600">
-                                    <a href="https://t.me/+919100105707" target="_blank" rel="noopener noreferrer">
-                                        <Send className="mr-2 h-5 w-5" /> Join on Telegram
+                                <Button asChild className="w-full bg-red-900 hover:bg-red-600">
+                                    <a href="https://www.instagram.com/bgwealthclub/" target="_blank" rel="noopener noreferrer">
+                                        <Send className="mr-2 h-5 w-5" /> Join on Instagram
                                     </a>
                                 </Button>
                             </CardContent>

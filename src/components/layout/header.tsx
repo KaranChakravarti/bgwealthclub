@@ -10,7 +10,7 @@ import { Logo } from './logo';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '/', label: 'Home' },
+
   { href: '/about', label: 'About Us' },
   { href: '/what-we-offer', label: 'What We Offer' },
   { href: '/guidance', label: 'AI Guidance' },
@@ -26,16 +26,17 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         {/* <Logo /> */}
-        <nav>
+        <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/logo.gif"     // Path starts from the root of the public folder
+            src="/logo.gif"
             alt="BG Wealth Club Logo"
-            width={50}         // Set your desired width
-            height={50}        // Set your desired height
-            priority  
-            className="rounded-xl"          // Ensures the logo loads quickly as it's a key element
+            width={50}
+            height={50}
+            priority
+            className="rounded-xl"
           />
-        </nav>
+          <span className="font-bold text-xl ">BG Wealth Club</span>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
