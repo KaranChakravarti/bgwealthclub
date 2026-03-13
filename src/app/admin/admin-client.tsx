@@ -317,7 +317,7 @@ export function AdminClient({ memories, ghats = [], products = [] }: AdminClient
                 : "text-gray-600 hover:text-gray-800"
             }`}
           >
-            Ghats
+            Blogs
           </button>
           <button
             onClick={() => setActiveTab("products")}
@@ -417,19 +417,19 @@ export function AdminClient({ memories, ghats = [], products = [] }: AdminClient
           <div>
             <div className="flex justify-between items-center mb-8">
               <h1 className="text-4xl font-bold text-gray-800 font-headline">
-                Manage Ghats
+                Manage Blogs
               </h1>
 
               <Dialog open={isGhatUploadOpen} onOpenChange={setIsGhatUploadOpen}>
                 <DialogTrigger asChild>
                   <Button>
                     <Plus className="mr-2 h-4 w-4" />
-                    Add Ghat
+                    Add Blogs
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
                   <DialogHeader>
-                    <DialogTitle>Upload New Ghat Card</DialogTitle>
+                    <DialogTitle>Upload New Blog Post</DialogTitle>
                   </DialogHeader>
                   <form onSubmit={handleGhatUpload} className="space-y-4 py-4">
                     <div className="space-y-2">
