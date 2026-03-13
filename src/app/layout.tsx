@@ -6,8 +6,32 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 
 export const metadata: Metadata = {
-  title: 'BG Wealth Club',
-  description: 'Build Wealth Together with BG Wealth Club — a community focused on financial education, disciplined investing, and long-term wealth growth.',
+  title: "BG Wealth Club | Smart Online Earning Platform",
+  description:
+    "BG Wealth Club is a smart platform where users can explore online earning opportunities, guidance, and financial growth strategies.",
+  
+  keywords: [
+    "bg wealth club",
+    "online earning",
+    "passive income",
+    "Trading signals",
+    "financial guidance"
+  ],
+
+  metadataBase: new URL("https://www.bgwealthclub.com"),
+
+  openGraph: {
+    title: "BG Wealth Club",
+    description: "Explore online earning and financial growth with BG Wealth Club.",
+    url: "https://www.bgwealthclub.com",
+    siteName: "BG Wealth Club",
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
